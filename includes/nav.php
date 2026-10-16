@@ -1,0 +1,2 @@
+<?php $enlaces = ['index'=>'Inicio','directorio'=>'Puntos de reciclaje','materiales'=>'Materiales','guia'=>'Cómo reciclar']; ?>
+<header class="header"><a class="brand" href="index.php"><span class="brand-icon">♻</span> Recicla<span>CDMX</span></a><nav aria-label="Principal"><?php foreach($enlaces as $ruta=>$nombre): ?><a <?= $page === $ruta ? 'aria-current="page"' : '' ?> href="<?= e($ruta) ?>.php"><?= e($nombre) ?></a><?php endforeach; ?></nav><a class="button small" href="participar.php">Participar <span>↗</span></a></header>
